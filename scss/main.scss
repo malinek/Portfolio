@@ -1,21 +1,23 @@
-// 1. Config files and helpers
+// 1. Abstracts
+@import "abstracts/_colors.scss";
 
 
 
 
 // 2. Vendors
-
+@import "vendors/_normalize";
 
 
 
 
 // 3. Base styles
-
+@import "base/_base";
 
 
 
 
 // 4. Layout
+@import "layout/_header";
 
 
 

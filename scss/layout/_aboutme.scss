@@ -1,0 +1,27 @@
+.container-about-me {
+  margin: 0 auto 60px auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  max-width: 900px;
+  display: flex;
+  justify-content: center;
+}
+
+.text-about-me {
+  padding-right: 10px;
+  
+}
+
+.image-about-me {
+  padding-left: 10px;
+ 
+}
+
+.image-malin {
+  width: 320px;
+  border-radius: 50%;
+  border: double 10px $brightgold;
+  padding: 20px;
+  box-shadow: 10px 10px 15px -5px rgba(8, 38, 78, 0.3);
+  /*box-shadow: 10px -10px  rgba(0,0,0,0.6); */
+}

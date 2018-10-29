@@ -1,17 +1,18 @@
 .main-header {
-  background-image: url("../img/hero-background.jpeg");
+  background-image: url("../img/hero-bg3.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 500px;
+  height: 400px;
+  margin-bottom: 60px;
 }
 
-.container-header {
+.container-navbar {
   max-width: 1100px;
   margin: 0 auto;
 }
 
-.container-header::after {
+.container-navbar::after {
   content: '';
   display: table;
   clear: both;
@@ -19,7 +20,7 @@
 
 .logo {
   float: left;
-  height: 120px;
+  height: 100px;
 }
 
 .main-nav {
@@ -46,4 +47,11 @@
   padding: 10px;
   text-decoration: none;
   text-transform: uppercase;
+  letter-spacing: 1.4px;
 }
+
+.hero-text {
+  text-align: center;
+  padding-top: 80px;
+}
+

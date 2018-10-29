@@ -1,23 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=Bubblegum+Sans|KoHo|Krub:300,400,500,600,700|Love+Ya+Like+A+Sister|Mrs+Saint+Delafield|Niramit|Oregano|Satisfy|Seaweed+Script|Special+Elite|Yesteryear');
+
 // 1. Abstracts
 @import "abstracts/_colors.scss";
-
-
 
 
 // 2. Vendors
 @import "vendors/_normalize";
 
 
-
-
 // 3. Base styles
 @import "base/_base";
-
-
+@import "base/_typography.scss";
 
 
 // 4. Layout
 @import "layout/_header";
+@import "layout/_aboutme";
 
 
 

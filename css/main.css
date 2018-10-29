@@ -1,4 +1,6 @@
+@import url("https://fonts.googleapis.com/css?family=Bubblegum+Sans|KoHo|Krub:300,400,500,600,700|Love+Ya+Like+A+Sister|Mrs+Saint+Delafield|Niramit|Oregano|Satisfy|Seaweed+Script|Special+Elite|Yesteryear");
 /** THEME from Adobe Color CC "BLUES AND GOLD" **/
+/** OTHER COLORS **/
 /*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -340,20 +342,59 @@ template {
   box-sizing: border-box;
 }
 
+body {
+  background: #E3DEC5;
+}
+
+h1, h2, h3, h4, h5, p {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-family: 'Krub', sans-serif;
+  font-weight: 700;
+  font-size: 50px;
+  color: #E3DEC5;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-family: 'Seaweed Script', cursive;
+  font-weight: 100;
+  font-size: 40px;
+  color: #EBC164;
+  margin-bottom: 15px;
+}
+
+h4 {
+  font-family: 'Krub', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #7f7f7f;
+}
+
+a {
+  font-family: 'Krub', sans-serif;
+  font-weight: 700;
+}
+
 .main-header {
-  background-image: url("../img/hero-background.jpeg");
+  background-image: url("../img/hero-bg3.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 500px;
+  height: 400px;
+  margin-bottom: 60px;
 }
 
-.container-header {
+.container-navbar {
   max-width: 1100px;
   margin: 0 auto;
 }
 
-.container-header::after {
+.container-navbar::after {
   content: '';
   display: table;
   clear: both;
@@ -361,7 +402,7 @@ template {
 
 .logo {
   float: left;
-  height: 120px;
+  height: 100px;
 }
 
 .main-nav {
@@ -388,4 +429,41 @@ template {
   padding: 10px;
   text-decoration: none;
   text-transform: uppercase;
+  letter-spacing: 1.4px;
+}
+
+.hero-text {
+  text-align: center;
+  padding-top: 80px;
+}
+
+.container-about-me {
+  margin: 0 auto 60px auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  max-width: 900px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.text-about-me {
+  padding-right: 10px;
+}
+
+.image-about-me {
+  padding-left: 10px;
+}
+
+.image-malin {
+  width: 320px;
+  border-radius: 50%;
+  border: double 10px #EBC164;
+  padding: 20px;
+  -webkit-box-shadow: 10px 10px 15px -5px rgba(8, 38, 78, 0.3);
+  box-shadow: 10px 10px 15px -5px rgba(8, 38, 78, 0.3);
+  /*box-shadow: 10px -10px  rgba(0,0,0,0.6); */
 }

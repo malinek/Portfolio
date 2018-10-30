@@ -351,6 +351,15 @@ h1, h2, h3, h4, h5, p {
   padding: 0;
 }
 
+figure {
+  margin: 0;
+}
+
+.responsive {
+  max-width: 100%;
+  height: auto;
+}
+
 h1 {
   font-family: 'Krub', sans-serif;
   font-weight: 700;
@@ -362,9 +371,17 @@ h1 {
 h2 {
   font-family: 'Seaweed Script', cursive;
   font-weight: 100;
-  font-size: 40px;
+  font-size: 38px;
   color: #EBC164;
   margin-bottom: 15px;
+}
+
+h3 {
+  font-family: 'Krub', sans-serif;
+  font-weight: 400;
+  font-size: 28px;
+  color: #EBC164;
+  text-transform: uppercase;
 }
 
 h4 {
@@ -375,9 +392,37 @@ h4 {
   color: #7f7f7f;
 }
 
+p {
+  font-family: 'Krub', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #7f7f7f;
+}
+
 a {
   font-family: 'Krub', sans-serif;
   font-weight: 700;
+}
+
+.button {
+  padding: 8px 16px;
+  color: #E3DEC5;
+  border: solid 1px #E3DEC5;
+  border-radius: 4px;
+  background-color: transparent;
+  text-transform: uppercase;
+  font-family: 'Krub', sans-serif;
+  font-size: 14px;
+  letter-spacing: 1.2px;
+  -webkit-transition: all 250ms ease;
+  -o-transition: all 250ms ease;
+  transition: all 250ms ease;
+}
+
+.button:hover {
+  background-color: #E3DEC5;
+  color: #030F1F;
 }
 
 .main-header {
@@ -466,4 +511,204 @@ a {
   -webkit-box-shadow: 10px 10px 15px -5px rgba(8, 38, 78, 0.3);
   box-shadow: 10px 10px 15px -5px rgba(8, 38, 78, 0.3);
   /*box-shadow: 10px -10px  rgba(0,0,0,0.6); */
+}
+
+.container-work {
+  margin: 0 auto 60px auto;
+  max-width: 1400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.work-item {
+  text-align: center;
+  position: relative;
+}
+
+.work-item img {
+  display: block;
+  margin: 10px;
+  width: 400px;
+  border: solid 8px white;
+}
+
+.work-desc {
+  position: absolute;
+  z-index: 100;
+  bottom: 18px;
+  left: 18px;
+  right: 18px;
+  background: rgba(3, 15, 31, 0.85);
+  background: rgba(70, 119, 171, 0.9);
+  background: rgba(0, 0, 0, 0.6);
+  padding: 0px 10px 12px 10px;
+}
+
+.work-desc h4 {
+  color: #E3DEC5;
+  padding-bottom: 5px;
+  font-size: 22px;
+}
+
+@media (min-width: 1020px) {
+  .work-item {
+    overflow: hidden;
+  }
+  .work-desc {
+    -webkit-transform: translateY(130%);
+    -ms-transform: translateY(130%);
+    transform: translateY(130%);
+    -webkit-transition: all 350ms ease;
+    -o-transition: all 350ms ease;
+    transition: all 350ms ease;
+  }
+  .work-item:hover .work-desc {
+    -webkit-transform: translateY(0%);
+    -ms-transform: translateY(0%);
+    transform: translateY(0%);
+  }
+}
+
+/** TITLE WITH RIBBON **/
+.ribbon {
+  font-size: 22px !important;
+  /* This ribbon is based on a 16px font side and a 24px vertical rhythm. I've used em's to position each element for scalability. If you want to use a different font size you may have to play with the position of the ribbon elements */
+  width: 40%;
+  position: relative;
+  /*background: #ba89b6; */
+  background: #4677AB;
+  text-align: center;
+  padding: 0.6em 1.2em;
+  /* Adjust to suit */
+  margin: 2em auto 2em;
+  /* Based on 24px vertical rhythm. 48px bottom margin - normally 24 but the ribbon 'graphics' take up 24px themselves so we double it. */
+}
+
+.ribbon:before, .ribbon:after {
+  content: "";
+  position: absolute;
+  display: block;
+  bottom: -1em;
+  /*border: 1.5em solid #986794; */
+  border: 1.2em solid #385f88;
+  z-index: -1;
+}
+
+.ribbon:before {
+  left: -1.7em;
+  border-right-width: 1.5em;
+  border-left-color: transparent;
+}
+
+.ribbon:after {
+  right: -1.7em;
+  border-left-width: 1.5em;
+  border-right-color: transparent;
+}
+
+.ribbon .ribbon-content:before, .ribbon .ribbon-content:after {
+  content: "";
+  position: absolute;
+  display: block;
+  border-style: solid;
+  border-color: #2a4766 transparent transparent transparent;
+  bottom: -1em;
+}
+
+.ribbon .ribbon-content:before {
+  left: 0;
+  border-width: 1em 0 0 1em;
+}
+
+.ribbon .ribbon-content:after {
+  right: 0;
+  border-width: 1em 1em 0 0;
+}
+
+/*
+ * ribbon medallion
+ */
+.award-ribbon {
+  font-family: 'Krub', sans-serif;
+  position: relative;
+  margin: 20px auto 160px;
+  height: 200px;
+  width: 200px;
+  /* make it a circle */
+  border-radius: 50%;
+  /* some rendering stuff */
+  background-clip: padding-box;
+  /* background color/gradient/whatever */
+  background: #396ea3;
+  background: -webkit-linear-gradient(45deg, #326190 19%, #396ea3 36%, #407bb6 62%, #396ea3 96%);
+  background: -o-linear-gradient(45deg, #326190 19%, #396ea3 36%, #407bb6 62%, #396ea3 96%);
+  background: linear-gradient(45deg, #326190 19%, #396ea3 36%, #407bb6 62%, #396ea3 96%);
+  /* adding dimension */
+  -webkit-box-shadow: inset 0px 0px 100px rgba(0, 0, 0, 0.2), 0px 0px 0px 10px #305c89, 0px 10px 30px 0px rgba(0, 0, 0, 0.9);
+  box-shadow: inset 0px 0px 100px rgba(0, 0, 0, 0.2), 0px 0px 0px 10px #305c89, 0px 10px 30px 0px rgba(0, 0, 0, 0.9);
+}
+
+/*
+ * text element
+ */
+.award-ribbon .award-ribbon-text {
+  padding: 30px;
+  display: block;
+  width: 100%;
+  /* vertical centering */
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  /* text styling */
+  color: #ffffff;
+  font-size: 1.6em;
+  line-height: 1;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 0px -1px 1px rgba(0, 0, 0, 0.5);
+}
+
+/*
+ * inner and outer ribbon pseudo elements
+ */
+.award-ribbon:before,
+.award-ribbon:after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  z-index: -1;
+  /* length of the ribbon */
+  padding-top: 160px;
+}
+
+/* 
+ * inner ribbon
+ */
+.award-ribbon:before {
+  top: 100px;
+  left: 20px;
+  border-color: transparent #386b9f transparent #326190;
+  border-width: 0px 80px 35px;
+  border-style: solid;
+}
+
+/* 
+ * outer ribbon (edges)
+ */
+.award-ribbon:after {
+  top: 90px;
+  left: 30px;
+  border-color: transparent #3e78b2 transparent #396ea3;
+  border-width: 0px 70px 30px;
+  border-style: solid;
 }

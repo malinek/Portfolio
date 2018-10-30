@@ -9,15 +9,31 @@ h1 {
 h2 {
   font-family: 'Seaweed Script', cursive;
   font-weight: 100;
-  font-size: 40px;
+  font-size: 38px;
   color: $brightgold;
   margin-bottom: 15px;
+}
+
+h3 {
+  font-family: 'Krub', sans-serif;
+  font-weight: 400;
+  font-size: 28px;
+  color: $brightgold;
+  text-transform: uppercase;
 }
 
 h4 {
   font-family: 'Krub', sans-serif;
   font-weight: 400;
   font-size: 18px;
+  line-height: 1.6;
+  color: $textgrey;
+}
+
+p {
+  font-family: 'Krub', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
   line-height: 1.6;
   color: $textgrey;
 }

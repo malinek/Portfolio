@@ -1,0 +1,113 @@
+.container-work {
+  margin: 0 auto 60px auto;
+  max-width: 1400px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+
+.work-item {
+  text-align: center;
+  position: relative;
+}
+
+.work-item img {
+  display: block;
+  margin: 10px;
+  width: 400px;
+  border: solid 8px white;
+}
+
+.work-desc {
+  position: absolute;
+  z-index: 100;
+  bottom: 18px;
+  left: 18px;
+  right: 18px;
+  background: rgba(3, 15, 31, 0.85);
+  background: rgba(70, 119, 171, 0.9);
+  background: rgba(0, 0, 0, 0.6);
+  padding: 0px 10px 12px 10px;
+}
+
+.work-desc h4 {
+  color: $light;
+  padding-bottom: 5px;
+  font-size: 22px;
+}
+
+@media (min-width: 1020px) {
+  
+  .work-item {
+    overflow: hidden;
+  }
+
+  .work-desc {
+    transform: translateY(130%);
+    transition: all 350ms ease;
+  }
+
+  .work-item:hover .work-desc {
+    transform: translateY(0%);
+  }
+}
+
+
+
+/** TITLE WITH RIBBON **/
+
+.ribbon {
+  font-size: 22px !important;
+  /* This ribbon is based on a 16px font side and a 24px vertical rhythm. I've used em's to position each element for scalability. If you want to use a different font size you may have to play with the position of the ribbon elements */
+ 
+  width: 40%;
+
+  position: relative;
+  /*background: #ba89b6; */
+  background: $lighterblue;
+  text-align: center;
+  padding: 0.6em 1.2em; /* Adjust to suit */
+  margin: 2em auto 2em; /* Based on 24px vertical rhythm. 48px bottom margin - normally 24 but the ribbon 'graphics' take up 24px themselves so we double it. */
+ }
+
+ .ribbon:before, .ribbon:after {
+    content: "";
+    position: absolute;
+    display: block;
+    bottom: -1em;
+    /*border: 1.5em solid #986794; */
+    border: 1.2em solid #385f88;
+    z-index: -1;
+ }
+
+ .ribbon:before {
+    left: -1.7em;
+    border-right-width: 1.5em;
+    border-left-color: transparent;
+ }
+
+ .ribbon:after {
+    right: -1.7em;
+    border-left-width: 1.5em;
+    border-right-color: transparent;
+ }
+
+ .ribbon .ribbon-content:before, .ribbon .ribbon-content:after {
+    content: "";
+    position: absolute;
+    display: block;
+    border-style: solid;
+    border-color: #2a4766 transparent transparent transparent;
+    bottom: -1em;
+ }
+
+ .ribbon .ribbon-content:before {
+    left: 0;
+    border-width: 1em 0 0 1em;
+ }
+
+ .ribbon .ribbon-content:after {
+    right: 0;
+    border-width: 1em 1em 0 0;
+ }

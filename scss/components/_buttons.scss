@@ -1,0 +1,19 @@
+
+.button {
+  padding: 8px 16px;
+  color: $light;
+  border: solid 1px $light;
+  border-radius: 4px;
+  background-color: transparent;
+  text-transform: uppercase;
+  font-family: 'Krub', sans-serif;
+  font-size: 14px;
+  letter-spacing: 1.2px;
+  transition: all 250ms ease;
+}
+
+.button:hover {
+  background-color: $light;
+  color: #030F1F;
+}
+

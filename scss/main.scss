@@ -12,12 +12,16 @@
 @import "base/_base";
 @import "base/_typography.scss";
 
+// 4. Components
+@import "components/_buttons";
 
-// 4. Layout
+
+// 5. Layout
 @import "layout/_header";
 @import "layout/_aboutme";
+@import "layout/_work";
+@import "layout/_testimonials";
 
 
 
 
-// 5. Components

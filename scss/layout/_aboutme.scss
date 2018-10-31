@@ -4,15 +4,12 @@
   padding-right: 15px;
   max-width: 900px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .text-about-me {
-  padding-right: 10px;
-}
-
-.image-about-me {
-  padding-left: 10px;
+  padding-right: 40px;
+  text-align: justify;
 }
 
 .image-malin {
@@ -23,3 +20,31 @@
   box-shadow: 10px 10px 15px -5px rgba(8, 38, 78, 0.3);
   /*box-shadow: 10px -10px  rgba(0,0,0,0.6); */
 }
+
+@media (max-width: 850px) {
+
+  .image-malin {
+    width: 290px;
+  }
+}
+
+@media (max-width: 700px) {
+
+  .container-about-me {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .text-about-me {
+    order: 1;
+    padding-right: 0px;
+  }
+
+  .text-about-me h2 {
+    margin: 30px auto 10px;
+    text-align: center;
+
+  }
+
+}
+

@@ -405,6 +405,10 @@ a {
   font-weight: 700;
 }
 
+label {
+  font-family: 'Krub', sans-serif;
+}
+
 .button {
   padding: 8px 16px;
   color: #E3DEC5;
@@ -423,6 +427,11 @@ a {
 .button:hover {
   background-color: #E3DEC5;
   color: #030F1F;
+}
+
+.button-form {
+  color: #08264e;
+  border: solid 1px #08264e;
 }
 
 .main-header {
@@ -490,17 +499,14 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .text-about-me {
-  padding-right: 10px;
-}
-
-.image-about-me {
-  padding-left: 10px;
+  padding-right: 40px;
+  text-align: justify;
 }
 
 .image-malin {
@@ -511,6 +517,32 @@ a {
   -webkit-box-shadow: 10px 10px 15px -5px rgba(8, 38, 78, 0.3);
   box-shadow: 10px 10px 15px -5px rgba(8, 38, 78, 0.3);
   /*box-shadow: 10px -10px  rgba(0,0,0,0.6); */
+}
+
+@media (max-width: 850px) {
+  .image-malin {
+    width: 290px;
+  }
+}
+
+@media (max-width: 700px) {
+  .container-about-me {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  .text-about-me {
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1;
+    padding-right: 0px;
+  }
+  .text-about-me h2 {
+    margin: 30px auto 10px;
+    text-align: center;
+  }
 }
 
 .container-work {
@@ -631,34 +663,54 @@ a {
   border-width: 1em 1em 0 0;
 }
 
+.container-testimonials {
+  margin: 0 auto 150px auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  max-width: 900px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
 /*
  * ribbon medallion
  */
 .award-ribbon {
   font-family: 'Krub', sans-serif;
   position: relative;
-  margin: 20px auto 160px;
-  height: 200px;
-  width: 200px;
+  /*margin: 20px auto 160px; */
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  /*height: 200px;
+  width: 200px; */
+  height: 130px;
+  width: 130px;
   /* make it a circle */
   border-radius: 50%;
   /* some rendering stuff */
   background-clip: padding-box;
   /* background color/gradient/whatever */
-  background: #396ea3;
-  background: -webkit-linear-gradient(45deg, #326190 19%, #396ea3 36%, #407bb6 62%, #396ea3 96%);
-  background: -o-linear-gradient(45deg, #326190 19%, #396ea3 36%, #407bb6 62%, #396ea3 96%);
-  background: linear-gradient(45deg, #326190 19%, #396ea3 36%, #407bb6 62%, #396ea3 96%);
+  background: #4677AB;
+  background: -webkit-linear-gradient(45deg, #385f88 19%, #4677AB 36%, #6a92bb 62%, #4677AB 96%);
+  background: -o-linear-gradient(45deg, #385f88 19%, #4677AB 36%, #6a92bb 62%, #4677AB 96%);
+  background: linear-gradient(45deg, #385f88 19%, #4677AB 36%, #6a92bb 62%, #4677AB 96%);
   /* adding dimension */
-  -webkit-box-shadow: inset 0px 0px 100px rgba(0, 0, 0, 0.2), 0px 0px 0px 10px #305c89, 0px 10px 30px 0px rgba(0, 0, 0, 0.9);
-  box-shadow: inset 0px 0px 100px rgba(0, 0, 0, 0.2), 0px 0px 0px 10px #305c89, 0px 10px 30px 0px rgba(0, 0, 0, 0.9);
+  -webkit-box-shadow: inset 0px 0px 100px rgba(0, 0, 0, 0.2), 0px 0px 0px 10px #315377, 0px 10px 30px 0px rgba(0, 0, 0, 0.9);
+  box-shadow: inset 0px 0px 100px rgba(0, 0, 0, 0.2), 0px 0px 0px 10px #315377, 0px 10px 30px 0px rgba(0, 0, 0, 0.9);
 }
 
 /*
  * text element
  */
 .award-ribbon .award-ribbon-text {
-  padding: 30px;
+  /*padding: 30px; */
+  padding: 0px;
   display: block;
   width: 100%;
   /* vertical centering */
@@ -668,8 +720,8 @@ a {
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   /* text styling */
-  color: #ffffff;
-  font-size: 1.6em;
+  color: #EBC164;
+  font-size: 1.2em;
   line-height: 1;
   font-weight: bold;
   text-align: center;
@@ -688,17 +740,17 @@ a {
   height: 0;
   z-index: -1;
   /* length of the ribbon */
-  padding-top: 160px;
+  padding-top: 120px;
 }
 
 /* 
  * inner ribbon
  */
 .award-ribbon:before {
-  top: 100px;
-  left: 20px;
+  top: 60px;
+  left: 5px;
   border-color: transparent #386b9f transparent #326190;
-  border-width: 0px 80px 35px;
+  border-width: 0px 60px 35px;
   border-style: solid;
 }
 
@@ -706,9 +758,132 @@ a {
  * outer ribbon (edges)
  */
 .award-ribbon:after {
-  top: 90px;
-  left: 30px;
+  top: 50px;
+  left: 15px;
   border-color: transparent #3e78b2 transparent #396ea3;
-  border-width: 0px 70px 30px;
+  border-width: 0px 50px 30px;
   border-style: solid;
 }
+
+.container-contact {
+  margin: 0px auto 200px auto;
+  max-width: 900px;
+  background: green;
+}
+
+.container-contact h2 {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.form-message textarea {
+  resize: none;
+}
+
+.form-contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  background: pink;
+}
+
+.form-name input {
+  -ms-flex-preferred-size: 100%;
+  flex-basis: 100%;
+}
+
+.form-email input {
+  -ms-flex-preferred-size: 100%;
+  flex-basis: 100%;
+}
+
+.form-subject input {
+  -ms-flex-preferred-size: 100%;
+  flex-basis: 100%;
+}
+
+.form-message textarea {
+  -ms-flex-preferred-size: 100%;
+  flex-basis: 100%;
+}
+
+/*form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 0 auto;
+  height: 450px;
+  background: rgba(0, 0, 0, 0.32);
+  text-align: left;
+  padding: 30px 0;
+  .subject,
+  .content {
+      width: 70%;
+      margin: 0 auto;
+      label {
+          display: block;
+          padding: 0;
+          margin: 0;
+          font-family: 'Varela Round';
+      }
+  }
+  .id {
+      display: flex;
+      justify-content: space-between;
+      height: 60px;
+      width: 70%;
+      margin: 0 auto;
+      .name,
+      .email,
+      {
+          display: inline-block;
+          width: 45%;
+          label {
+              display: block;
+              padding: 0;
+              margin: 0;
+              font-family: 'Varela Round';
+          }
+          input[name="email"],
+          input[name="name"] {
+              width: 100%;
+              height: 40px;
+          }
+      }
+  }
+  .subject {
+      height: 62px;
+      input[name="subject"] {
+          width: 100%;
+          height: 40px;
+      }
+  }
+  .content {
+      textarea {
+          width: 100%;
+          resize: none;
+      }
+      button {
+        margin: 0;
+          float: none;
+          background: #e74c3c;
+          padding: 8px 77px;
+          border: 1px solid #e74c3c;
+          box-shadow: 0 0 5px rgba(0, 0, 0, .4);
+          font-family: 'Varela Round';
+          transition: all .3;
+          &:hover {
+              background: none;
+              border: 1px solid rgba(0, 0, 0, .7);
+          }
+      }
+  }
+} */

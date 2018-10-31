@@ -1,3 +1,12 @@
+.container-testimonials {
+  margin: 0 auto 150px auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  max-width: 900px;
+  display: flex;
+  justify-content: center;
+}
+
 
 /*
  * ribbon medallion
@@ -6,9 +15,15 @@
 .award-ribbon {
   font-family: 'Krub', sans-serif;
   position: relative;
-  margin: 20px auto 160px;
-  height: 200px;
-  width: 200px;
+  /*margin: 20px auto 160px; */
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  /*height: 200px;
+  width: 200px; */
+  height: 130px;
+  width: 130px;
 
   /* make it a circle */
   border-radius: 50%;
@@ -17,13 +32,12 @@
   background-clip: padding-box;
 
   /* background color/gradient/whatever */
-  background: #396ea3;
-  background: linear-gradient(45deg, #326190 19%, #396ea3 36%, #407bb6 62%, #396ea3 96%);
+  background: $lighterblue;
+  background: linear-gradient(45deg, #385f88 19%, $lighterblue 36%, #6a92bb 62%, $lighterblue 96%);
 
   /* adding dimension */
-  box-shadow: inset 0px 0px 100px rgba(0, 0, 0, 0.2), 0px 0px 0px 10px #305c89, 0px 10px 30px 0px rgba(0, 0, 0, 0.9);
+  box-shadow: inset 0px 0px 100px rgba(0, 0, 0, 0.2), 0px 0px 0px 10px #315377, 0px 10px 30px 0px rgba(0, 0, 0, 0.9);
 }
-
 
 /*
  * text element
@@ -31,7 +45,8 @@
 
 .award-ribbon .award-ribbon-text {
 
-  padding: 30px;
+  /*padding: 30px; */
+  padding: 0px;
   display: block;
   width: 100%;
   
@@ -41,8 +56,8 @@
   transform: translateY(-50%);
   
   /* text styling */
-  color: #ffffff;
-  font-size: 1.6em;
+  color: $brightgold;
+  font-size: 1.2em;
   line-height: 1;
   font-weight: bold;
   text-align: center;
@@ -62,7 +77,7 @@
   height: 0;
   z-index: -1;
   /* length of the ribbon */
-  padding-top: 160px;
+  padding-top: 120px;
 }
 
 /* 
@@ -70,10 +85,10 @@
  */
 
 .award-ribbon:before {
-  top: 100px;
-  left: 20px;
+  top: 60px;
+  left: 5px;
   border-color: transparent #386b9f transparent #326190;
-  border-width: 0px 80px 35px;
+  border-width: 0px 60px 35px;
   border-style: solid;
 }
 
@@ -82,9 +97,9 @@
  */
 
 .award-ribbon:after {
-  top: 90px;
-  left: 30px;
+  top: 50px;
+  left: 15px;
   border-color: transparent #3e78b2 transparent #396ea3;
-  border-width: 0px 70px 30px;
+  border-width: 0px 50px 30px;
   border-style: solid;
 }

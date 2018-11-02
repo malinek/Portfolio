@@ -32,13 +32,14 @@
     </div>
   </header>
 
+  <!-- ABOUT ME -->
   <section class="container-about-me">
     <div class="text-about-me">
       <h2>Hi, I'm Malin...</h2>
       <h4>Lorem ipsum dolor sit amet, vivendo tibique vix id. Ad vix fugit nominati incorrupte, pertinax repudiandae eum cu. Cu minim omnes legimus mei, eum rebum euismod veritus te. Ad nihil debitis duo, nec tamquam adversarium cu, vis prompta tractatos et. Ad clita fuisset conceptam sea, tacimates accusamus an mei. Ut feugait rationibus expetendis eum, nec sumo scribentur et, mundi albucius quo ut. Sed facer feugait deterruisset an, ad utinam graeco deterruisset eam. Vim nobis euismod ei, qui veniam eleifend no. Ipsum cetero integre vim ad, ex electram molestiae complectitur nec, virtute alterum ne pro.</h4>
     </div>
     <div class="image-about-me">
-        <img src="img/fav2.jpg" alt="Image of Malin Ekelund" class="image-malin">
+      <img src="img/fav2.jpg" alt="Image of Malin Ekelund" class="image-malin">
     </div>
   </section><!-- end section about-me -->
 
@@ -55,7 +56,7 @@
       <img src="img/work-image-1.jpg" alt="Image of my first portfolio item" class="responsive">
       <figcaption class="work-desc">
           <h4>Wordpress theme</h4>
-        <button type="button" class="button">Project details</button>
+        <button type="button" class="button-work">Project details</button>
       </figcaption>
     </figure>
 
@@ -64,7 +65,7 @@
         <img src="img/work-image-2.jpg" alt="Image of my second portfolio item" class="responsive">
         <figcaption class="work-desc">
             <h4>E-commerce web application</h4>
-            <button type="button" class="button">Project details</button>
+            <button type="button" class="button-work">Project details</button>
         </figcaption>
       </figure>
 
@@ -73,7 +74,7 @@
         <img src="img/work-image-3.jpg" alt="Image of my second portfolio item" class="responsive">
         <figcaption class="work-desc">
             <h4>Blog web application</h4>
-            <button type="button" class="button">Project details</button>
+            <button type="button" class="button-work">Project details</button>
         </figcaption>
       </figure>
 
@@ -95,61 +96,40 @@
 
   <!-- CONTACT -->
 
-  <section class="container-contact">
-    
+  <form class="container-form">
+
     <h2>Please get in touch</h2>
 
-    <form class="form-contact">
+    <hr class="contact-break">
 
-      <div class="form-name">
+    <div class="form-name-email">
+      <div class="input">
         <label>Name*</label><br>
         <input type="text" required>
       </div>
-
-      <div class="form-email">
+      <div class="input">
         <label>Email*</label><br>
-        <input type="text" required>
-      </div>
-      
-      <div class="form-subject">
+        <input type="text" required>  
+        </div>
+    </div>
+
+    <div class="form-subject">
+      <div class="input-subject"></div>
         <label>Subject (optional)</label><br>
         <input type="text">
       </div>
+    </div>
 
-      <div class="form-message">
+    <div class="form-message">
+      <div class="message"></div>
         <label>Message*</label><br>
         <textarea required></textarea>
       </div>
+    </div>
 
-      <button type="submit" class="button button-form">Submit</button>
+    <button type="submit" class="button-work button-form">Submit</button>
 
-    </form>
-   
-    
-    <!--
-    <form class="form">
-      <div class="id">
-        <div class="name">
-          <label for="name">Name</label>
-          <input id="name" type="text" name="name">
-        </div>
-        <div class="email">
-          <label for="email">Email</label>
-          <input id="email" type="text" name="email">
-        </div>
-      </div>
-      <div class="subject">
-        <label for="subject">Subject</label>
-        <input id="subject" type="text" name="subject">
-      </div>
-      <div class="content">
-        <label id="contect" for="content">Content</label>
-        <textarea name="content" id="" cols="30" rows="10"></textarea>
-        <button type="submit">SUBMIT</button>
-      </div>
-    </form> -->
-    
-  </section>
+  </form>
 
 </body>
 

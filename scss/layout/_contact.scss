@@ -1,41 +1,106 @@
-.container-contact {
-  margin: 0px auto 200px auto;
-  max-width: 900px;
-  background: green;
+.container-form {
+  margin: 0px auto 60px auto;
+  padding: 30px 60px 40px 60px;
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgb(235,193,100);
+  background: linear-gradient(0deg, rgba(235,193,100,1) 0%, rgba(70,119,171,1) 100%);
+  border-radius: 4px;
+  box-shadow: 0 20px 15px -12px rgba(0, 0, 0, 0.5);
 }
 
-.container-contact h2 {
-  margin-bottom: 40px;
+.container-form h2 {
+  margin-bottom: 26px;
   text-align: center;
+  color: $brightgold;
+}
+
+.contact-break {
+  border: solid 0.5px rgba(235,193,100,0.5);
+  width: 700px;
+  margin-left: -60px;
+  margin-bottom: 30px;
+}
+
+.form-name-email {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.input > input {
+  border: 0;
+  border-radius: 4px;
+  width: 270px;
+  outline: none;
+  height: 30px;
+  margin-top: 2px;
+  font-family: 'Krub', sans-serif;
+}
+
+.form-subject {
+  width: 100%;
+}
+
+.form-subject input {
+  border: 0;
+  border-radius: 4px;
+  outline: none;
+  width: 100%;
+  height: 30px;
+  margin-top: 2px;
+}
+
+.form-message {
+  width: 100%;
 }
 
 .form-message textarea {
   resize: none;
+  border: none;
+  border-radius: 4px;
+  outline: none;
+  height: 150px;
+  width: 100%;
+  margin-top: 2px;
 }
 
-.form-contact {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-around;
-  background: pink;
+.form-name-email, .form-subject, .form-message {
+  margin-bottom: 20px;
 }
 
-.form-name input {
-  flex-basis: 100%;
+.container-form label {
+  color: $brightgold;
+  font-weight: 700;
 }
 
-.form-email input {
-  flex-basis: 100%;
+@media (max-width: 699px) {
+
+  .container-form {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .form-name-email {
+    flex-direction: column;
+  }
+
+  .input > input {
+    width: 100%;
+  }
+
+  .form-name-email .input:first-child {
+    margin-bottom: 20px;
+  }
 }
 
-.form-subject input {
-  flex-basis: 100%;
-}
 
-.form-message textarea {
-  flex-basis: 100%;
-}
+
+
+
+
 
 
 

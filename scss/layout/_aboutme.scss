@@ -5,11 +5,17 @@
   max-width: 900px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .text-about-me {
   padding-right: 40px;
   text-align: justify;
+  flex: 3;
+}
+
+.image-about-me {
+  flex: 1;
 }
 
 .image-malin {

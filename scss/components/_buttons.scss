@@ -1,5 +1,5 @@
 
-.button {
+.button-work {
   padding: 8px 16px;
   color: $light;
   border: solid 1px $light;
@@ -12,13 +12,25 @@
   transition: all 250ms ease;
 }
 
-.button:hover {
+.button-work:hover, .button-work:focus {
   background-color: $light;
   color: #030F1F;
 }
 
 .button-form {
-  color: $darkblue;
-  border: solid 1px $darkblue;
+  padding: 12px 40px;
+  color: $brightgold;
+  background-color: #6a92bb;
+  /*border: solid 1px #5884b3; */
+  border: none;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.button-form:hover, .button-form:focus {
+  background-color: darken($color: #6a92bb, $amount: 10%);
+  color: $brightgold;
+  transform: translateY(4px);
 }
 

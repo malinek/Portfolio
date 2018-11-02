@@ -9,9 +9,10 @@ h1 {
 h2 {
   font-family: 'Seaweed Script', cursive;
   font-weight: 100;
-  font-size: 38px;
+  font-size: 42px;
   color: $brightgold;
   margin-bottom: 15px;
+  letter-spacing: 2px;
 }
 
 h3 {
@@ -45,4 +46,9 @@ a {
 
 label {
   font-family: 'Krub', sans-serif;
+}
+
+input {
+  font-family: 'Krub', sans-serif;
+  color: $textgrey;
 }

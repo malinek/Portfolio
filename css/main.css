@@ -345,6 +345,10 @@ template {
 body {
   /*background: $light; */
   background: #f5f0db;
+  position: relative;
+  margin: 0px;
+  padding-bottom: 200px;
+  min-height: 100%;
 }
 
 h1, h2, h3, h4, h5, p {
@@ -359,6 +363,11 @@ figure {
 .responsive {
   max-width: 100%;
   height: auto;
+}
+
+body {
+  font-family: 'Krub', sans-serif;
+  font-size: 16px;
 }
 
 h1 {
@@ -982,3 +991,32 @@ input {
       }
   }
 } */
+.site-footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #08264e;
+  text-align: center;
+}
+
+.site-footer h3 {
+  text-transform: none;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.site-footer h4 {
+  color: #EBC164;
+  margin-bottom: 20px;
+}
+
+.site-footer i {
+  color: #EBC164;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 20px;
+  font-size: 36px;
+}

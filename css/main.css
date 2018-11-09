@@ -372,10 +372,10 @@ body {
 
 h1 {
   font-family: 'Krub', sans-serif;
-  font-weight: 700;
-  font-size: 50px;
-  color: #E3DEC5;
+  font-size: 54px;
+  color: #EBC164;
   text-transform: uppercase;
+  font-weight: 400;
 }
 
 h2 {
@@ -471,11 +471,13 @@ input {
   background-repeat: no-repeat;
   height: 400px;
   margin-bottom: 60px;
+  position: relative;
 }
 
 .container-navbar {
-  max-width: 1100px;
   margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 10px;
 }
 
 .container-navbar::after {
@@ -487,6 +489,7 @@ input {
 .logo {
   float: left;
   height: 60px;
+  padding-top: 4px;
 }
 
 .main-nav {
@@ -514,11 +517,72 @@ input {
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 1.4px;
+  -webkit-transition: color 800ms ease;
+  -o-transition: color 800ms ease;
+  transition: color 800ms ease;
+}
+
+.main-nav a:hover, .site-nav a:focus {
+  color: #EBC164;
+  -webkit-transition: color 800ms ease;
+  -o-transition: color 800ms ease;
+  transition: color 800ms ease;
 }
 
 .hero-text {
   text-align: center;
   padding-top: 80px;
+}
+
+/*.main-header::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: url("../img/wave2.png");
+  height: 240px;
+  background-size: cover;
+  background-repeat: no-repeat;
+} */
+.ml5 {
+  position: relative;
+}
+
+.ml5 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.25em;
+  padding-right: 0.05em;
+  padding-bottom: 0.15em;
+  padding-left: 0.05em;
+  line-height: 1em;
+}
+
+.ml5 .line {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  height: 3px;
+  width: 100%;
+  background-color: #EBC164;
+  -webkit-transform-origin: 0.5 0;
+  -ms-transform-origin: 0.5 0;
+  transform-origin: 0.5 0;
+}
+
+.ml5 .ampersand {
+  font-family: 'Seaweed Script', cursive;
+  width: 1em;
+  margin-right: -0.1em;
+  margin-left: -0.1em;
+}
+
+.ml5 .letters {
+  display: inline-block;
+  opacity: 0;
 }
 
 .container-about-me {

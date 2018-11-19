@@ -24,17 +24,9 @@
   border: double 10px $brightgold;
   padding: 20px;
   box-shadow: 10px 10px 15px -5px rgba(8, 38, 78, 0.3);
-  /*box-shadow: 10px -10px  rgba(0,0,0,0.6); */
 }
 
-@media (max-width: 850px) {
-
-  .image-malin {
-    width: 290px;
-  }
-}
-
-@media (max-width: 700px) {
+@media (max-width: 800px) {
 
   .container-about-me {
     flex-wrap: wrap;
@@ -44,13 +36,17 @@
   .text-about-me {
     order: 1;
     padding-right: 0px;
+    flex-basis: 100%;
   }
 
   .text-about-me h2 {
-    margin: 30px auto 10px;
+    margin: 30px auto 10px auto;
     text-align: center;
-
   }
 
+  .image-about-me {
+    flex-basis: 100%;
+    text-align: center;
+  }
 }
 

@@ -30,7 +30,6 @@
 
 .work-desc h4 {
   color: $light;
-  padding-bottom: 5px;
   font-size: 22px;
 }
 
@@ -61,6 +60,54 @@
   .work-item:hover .work-desc {
     transform: translateY(0%);
   }
+}
+
+/** MODAL WORK **/
+
+.portfolio-modal {
+  position: fixed;
+  z-index: 110;
+  top: 2em;
+  bottom: 2em;
+  left: 2em;
+  right: 2em;
+  background: white;
+  box-shadow: 0 0 0 3em rgba(black, .5);
+  overflow-y: scroll;
+
+  display: none;
+
+  &.is-open {
+    display: block;
+  }
+
+}
+
+.portfolio-header {
+  background: $lighterblue;
+}
+
+.portfolio-header h2 {
+  padding-top: 10px;
+}
+
+.portfolio-header h4 {
+  color: $brightgold;
+  padding-bottom: 20px;
+}
+
+ .modal-close { 
+  background: white;
+  position: fixed;
+  left: 3em;
+  top: 3em;
+  border: 0;
+  width: 2em;
+  height: 2em;
+  padding: 4px 0 0;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 0 5px rgba(black, .5);
 }
 
 /** TITLE WITH RIBBON **/
@@ -133,3 +180,5 @@
     width: 75%;
   }
  }
+
+ 

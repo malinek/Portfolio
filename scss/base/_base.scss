@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   /*background: $light; */
   background: $bodybg;
@@ -23,4 +27,8 @@ figure {
 .responsive {
   max-width: 100%;
   height: auto;
+}
+
+.anchor {
+  padding-top: 60px;
 }

@@ -20,28 +20,23 @@
       
       <nav class="main-nav">
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Work</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#about-section">About</a></li>
+          <li><a href="#work-section">Work</a></li>
+          <li><a href="#contact-section">Contact</a></li>
         </ul>
       </nav>
-    </div><!-- end container-header -->
+      <div class="menu-toggle">
+        <div class="hamburger"></div>
+      </div>
+    </div><!-- end container-navbar -->
 
     <div class="hero-text">
-      <h1 class="ml5">
-        <span class="text-wrapper">
-          <span class="line line1"></span>
-          <span class="letters letters-left">Web Design</span>
-          <span class="letters ampersand">&amp;</span>
-          <span class="letters letters-right">Development</span>
-          <span class="line line2"></span>
-        </span>
-      </h1>
+      <h1>web design and development</h1>
     </div>
   </header>
 
   <!-- ABOUT ME -->
-  <section class="container-about-me">
+  <section class="container-about-me anchor" id="about-section">
     <div class="text-about-me">
       <h2>Hi, I'm Malin...</h2>
       <h4>I create websites. I'm a highly intuitive person and the most important thing for me is to listen to your needs. I can create a tailormade website for you or help you by using an existing template. If you are not sure what you want I can help you find out.<br><br>I can help you with the entire process, taking photos for your website, the design and of course, the development. I'm very flexible to your needs.<br><br>A website that really lets you and your business shine is so important for reaching your potential. I'm passionate about helping you with that.</h4>
@@ -52,10 +47,11 @@
   </section><!-- end section about-me --> 
 
   <!-- MY WORK -->
-
-  <h3 class="ribbon">
-    <strong class="ribbon-content">Some of my work</strong>
-  </h3>
+  <div class="container-ribbon anchor" id="work-section">
+    <h3 class="ribbon">
+      <strong class="ribbon-content">Some of my work</strong>
+    </h3>
+  </div>
 
   <section class="container-work">
 
@@ -134,7 +130,7 @@
 
   <!-- CONTACT -->
 
-  <form class="container-form">
+  <form class="container-form anchor" id="contact-section">
 
     <h2>Please get in touch</h2>
 
@@ -179,6 +175,16 @@
     <h3>&copy; Malin Ekelund 2018</h3>
 
   </footer>
+
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
+  <script
+  src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+  integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+  crossorigin="anonymous"></script>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 

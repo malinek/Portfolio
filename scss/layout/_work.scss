@@ -123,7 +123,7 @@
   background: $lighterblue;
   text-align: center;
   padding: 0.6em 1.2em; /* Adjust to suit */
-  margin: 2em auto 2em; /* Based on 24px vertical rhythm. 48px bottom margin - normally 24 but the ribbon 'graphics' take up 24px themselves so we double it. */
+  margin: 0em auto 2em; /* Based on 24px vertical rhythm. 48px bottom margin - normally 24 but the ribbon 'graphics' take up 24px themselves so we double it. */
  }
 
  .ribbon:before, .ribbon:after {

@@ -8,7 +8,9 @@ h1 {
   font-size: 54px;
   color: $brightgold;
   text-transform: uppercase;
-  font-weight: 400;
+  font-weight: 800;
+  letter-spacing: 2px;
+  line-height: 1.5;
 }
 
 h2 {
@@ -47,6 +49,8 @@ p {
 a {
   font-family: 'Krub', sans-serif;
   font-weight: 700;
+  font-size: 20px;
+  color: $lighterblue;
 }
 
 label {

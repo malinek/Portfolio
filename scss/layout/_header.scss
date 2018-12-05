@@ -27,6 +27,7 @@
   float: left;
   height: 60px;
   padding-top: 4px;
+  padding-bottom: 4px;
 }
 
 .main-nav {
@@ -108,7 +109,7 @@
   .menu-toggle {
     padding: 1em;
     position: absolute;
-    top: 1em;
+    top: 0.8em;
     right: .3em;
     cursor: pointer;
   }
@@ -150,10 +151,37 @@
 
 .hero-text {
   text-align: center;
-  padding-top: 100px;
+  padding-top: 5em;
 }
 
-/*.main-header::before {
+.hero-text h1 {
+  text-shadow: 3px 4px 5px rgba(0, 0, 0, 0.7);
+}
+
+@media (max-width: 930px) {
+
+  .hero-text h1 {
+    font-size: 46px;
+  }
+}
+
+@media (max-width: 800px) {
+
+  .hero-text h1 {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 682px) {
+
+  .hero-text {
+    padding-top: 4em;
+  }
+}
+
+
+
+.main-header::before {
   content: "";
   position: absolute;
   bottom: 0;
@@ -163,7 +191,7 @@
   height: 240px;
   background-size: cover;
   background-repeat: no-repeat;
-} */
+} 
 
 
 

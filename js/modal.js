@@ -11,7 +11,6 @@ portfolioContainer.addEventListener('click', e => {
   const modal = modalToggle.parentNode.nextElementSibling
   const closeButton = modal.querySelector('.modal-close')
 
-
   modal.classList.add('is-open')
 
   closeButton.addEventListener('click', _ => {

@@ -67,14 +67,20 @@
 .portfolio-modal {
   position: fixed;
   z-index: 110;
-  top: 2em;
+  /*top: 2em;
   bottom: 2em;
   left: 2em;
-  right: 2em;
+  right: 2em; */
+  width: 500px;
+  max-width: 100%;
+  height: 600px;
+  max-height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   background: white;
-  box-shadow: 0 0 0 3em rgba(black, .5);
+  box-shadow: 0 0 0 25em rgba(black, .5);
   overflow-y: scroll;
-
   display: none;
 
   &.is-open {
@@ -94,6 +100,18 @@
 .portfolio-header h4 {
   color: $brightgold;
   padding-bottom: 20px;
+}
+
+.portfolio-content p {
+  padding: 15px 20px 20px 20px;
+  text-align: justify;
+}
+
+.portfolio-content img {
+  display: block;
+  margin: 30px auto 0 auto;
+  border: double 10px $brightgold;
+  padding: 15px;
 }
 
  .modal-close { 

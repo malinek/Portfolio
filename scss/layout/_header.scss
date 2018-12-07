@@ -179,16 +179,14 @@
   }
 }
 
-
-
 .main-header::before {
   content: "";
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
-  background-image: url("../img/wave2.png");
-  height: 240px;
+  background-image: url("../img/wave3.png");
+  height: 70px;
   background-size: cover;
   background-repeat: no-repeat;
 } 

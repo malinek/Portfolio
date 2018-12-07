@@ -91,6 +91,8 @@
 
 .portfolio-header {
   background: $lighterblue;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .portfolio-header h2 {
@@ -100,6 +102,8 @@
 .portfolio-header h4 {
   color: $brightgold;
   padding-bottom: 20px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 .portfolio-content p {
@@ -109,7 +113,7 @@
 
 .portfolio-content img {
   display: block;
-  margin: 30px 0 40px 0;
+  margin: 40px 0 0 0;
   width: 600px;
   max-width: 100%;
   border: none;

@@ -424,8 +424,7 @@ p {
 a {
   font-family: 'Krub', sans-serif;
   font-weight: 700;
-  font-size: 20px;
-  color: #4677AB;
+  text-decoration: none;
 }
 
 label {
@@ -437,6 +436,7 @@ input {
   color: #7f7f7f;
 }
 
+/***** BUTTON THAT OPENS THE MODAL *****/
 .button-work {
   padding: 8px 16px;
   color: #E3DEC5;
@@ -446,6 +446,7 @@ input {
   text-transform: uppercase;
   font-family: 'Krub', sans-serif;
   font-size: 14px;
+  font-weight: 700;
   letter-spacing: 1.2px;
   -webkit-transition: all 250ms ease;
   -o-transition: all 250ms ease;
@@ -455,6 +456,7 @@ input {
   width: 174px;
   margin: 6px auto;
   text-align: center;
+  cursor: pointer;
 }
 
 .button-work:hover, .button-work:focus {
@@ -462,6 +464,27 @@ input {
   color: #030F1F;
 }
 
+/***** BUTTON INSIDE THE MODAL *****/
+.button-modal {
+  padding: 12px 26px;
+  color: #4677AB;
+  background-color: #EBC164;
+  border: solid 1px #4677AB;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  -webkit-transition: all 250ms ease;
+  -o-transition: all 250ms ease;
+  transition: all 250ms ease;
+}
+
+.button-modal:hover, .button-modal:focus {
+  background-color: #4677AB;
+  color: #EBC164;
+}
+
+/***** BUTTON CONTACT FORM *****/
 .button-form {
   padding: 12px 40px;
   color: #EBC164;
@@ -834,6 +857,8 @@ input {
 
 .portfolio-header {
   background: #4677AB;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .portfolio-header h2 {
@@ -843,6 +868,8 @@ input {
 .portfolio-header h4 {
   color: #EBC164;
   padding-bottom: 20px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 .portfolio-content p {
@@ -852,7 +879,7 @@ input {
 
 .portfolio-content img {
   display: block;
-  margin: 30px 0 40px 0;
+  margin: 40px 0 0 0;
   width: 600px;
   max-width: 100%;
   border: none;

@@ -1,3 +1,4 @@
+/***** BUTTON THAT OPENS THE MODAL *****/
 
 .button-work {
   padding: 8px 16px;
@@ -8,6 +9,7 @@
   text-transform: uppercase;
   font-family: 'Krub', sans-serif;
   font-size: 14px;
+  font-weight: 700;
   letter-spacing: 1.2px;
   transition: all 250ms ease;
   display: block;
@@ -15,12 +17,34 @@
   width: 174px;
   margin: 6px auto;
   text-align: center;
+  cursor: pointer;
 }
 
 .button-work:hover, .button-work:focus {
   background-color: $light;
   color: #030F1F;
 }
+
+/***** BUTTON INSIDE THE MODAL *****/
+
+.button-modal {
+  padding: 12px 26px;
+  color: $lighterblue;
+  background-color: $brightgold;
+  border: solid 1px $lighterblue;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  transition: all 250ms ease;
+}
+
+.button-modal:hover, .button-modal:focus {
+  background-color: $lighterblue;
+  color: $brightgold;
+}
+
+/***** BUTTON CONTACT FORM *****/
 
 .button-form {
   padding: 12px 40px;
@@ -38,4 +62,3 @@
   color: $brightgold;
   transform: translateY(4px);
 }
-

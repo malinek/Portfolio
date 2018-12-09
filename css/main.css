@@ -436,7 +436,7 @@ input {
   color: #7f7f7f;
 }
 
-/***** BUTTON THAT OPENS THE MODAL *****/
+/***** BUTTON THAT OPENS THE MODALS WORK SECTION *****/
 .button-work {
   padding: 8px 16px;
   color: #E3DEC5;
@@ -464,7 +464,7 @@ input {
   color: #030F1F;
 }
 
-/***** BUTTON INSIDE THE MODAL *****/
+/***** BUTTON INSIDE THE MODALS WORK SECTION *****/
 .button-modal {
   padding: 12px 26px;
   color: #4677AB;
@@ -504,6 +504,20 @@ input {
   transform: translateY(4px);
 }
 
+/***** BUTTON PRIVACY POLICY *****/
+.button-privacy-policy {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  color: #EBC164;
+  font-size: 18px;
+  font-weight: 700;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
 .main-header {
   background-image: url("../img/hero-bg3.jpg");
   background-size: cover;
@@ -520,6 +534,7 @@ input {
   margin: 0 auto;
   padding-left: 20px;
   padding-right: 10px;
+  max-width: 1200px;
 }
 
 .container-navbar::after {
@@ -1312,11 +1327,7 @@ input {
   text-transform: none;
   font-size: 20px;
   font-weight: 700;
-}
-
-.site-footer h4 {
-  color: #EBC164;
-  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 .site-footer i {
@@ -1325,4 +1336,54 @@ input {
   padding-right: 10px;
   margin-bottom: 20px;
   font-size: 36px;
+}
+
+/* MODAL PRIVACY POLICY */
+/* The Modal (background) */
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: black;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #ffffff;
+  margin: 5% auto;
+  /* 15% from the top and centered */
+  width: 90%;
+  /* Could be more or less, depending on screen size */
+}
+
+.modal-footer-header {
+  background: #4677AB;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.privacy-policy-title {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.modal-text p {
+  text-align: left;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 20px;
 }

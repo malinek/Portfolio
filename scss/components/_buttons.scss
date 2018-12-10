@@ -37,6 +37,9 @@
   font-weight: 700;
   letter-spacing: 2px;
   transition: all 250ms ease;
+  cursor: pointer;
+  text-transform: uppercase;
+  box-shadow: 0 12px 20px -8px rgba(0, 0, 0, 0.5);
 }
 
 .button-modal:hover, .button-modal:focus {
@@ -63,7 +66,7 @@
   transform: translateY(4px);
 }
 
-/***** BUTTON PRIVACY POLICY *****/
+/***** BUTTON PRIVACY POLICY (LOOKS LIKE A LINK) *****/
 
 .button-privacy-policy {
   display: block;

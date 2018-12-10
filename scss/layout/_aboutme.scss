@@ -1,8 +1,8 @@
 .container-about-me {
   margin: 0 auto 20px auto;
-  padding-left: 15px;
-  padding-right: 15px;
-  max-width: 900px;
+  padding-left: 30px;
+  padding-right: 30px;
+  max-width: 1000px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -31,6 +31,8 @@
   .container-about-me {
     flex-wrap: wrap;
     justify-content: center;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 
   .text-about-me {

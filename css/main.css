@@ -351,7 +351,7 @@ body {
   background: #f5f0db;
   position: relative;
   margin: 0px;
-  padding-bottom: 200px;
+  padding-bottom: 180px;
   min-height: 100%;
 }
 
@@ -708,9 +708,9 @@ input {
 
 .container-about-me {
   margin: 0 auto 20px auto;
-  padding-left: 15px;
-  padding-right: 15px;
-  max-width: 900px;
+  padding-left: 30px;
+  padding-right: 30px;
+  max-width: 1000px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -752,6 +752,8 @@ input {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
+    padding-left: 15px;
+    padding-right: 15px;
   }
   .text-about-me {
     -webkit-box-ordinal-group: 2;
@@ -1027,10 +1029,10 @@ input {
 }
 
 .container-testimonials {
-  margin: 0 auto 110px auto;
-  padding-left: 15px;
-  padding-right: 15px;
-  max-width: 900px;
+  margin: 0 auto 60px auto;
+  padding-left: 30px;
+  padding-right: 30px;
+  max-width: 1000px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1039,15 +1041,35 @@ input {
   justify-content: center;
 }
 
-/*
- * ribbon medallion
- */
+.text-testimonials {
+  margin-left: 40px;
+}
+
+.text-testimonials i:first-child {
+  color: #EBC164;
+  padding-right: 10px;
+}
+
+.text-testimonials i:last-child {
+  color: #EBC164;
+  padding-left: 10px;
+  position: absolute;
+}
+
+.text-testimonials p {
+  text-align: justify;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+/* RIBBON MEDALLION */
 .award-ribbon {
   font-family: 'Krub', sans-serif;
   position: relative;
-  /*margin: 20px auto 160px; */
-  margin-left: 20px;
-  margin-right: 20px;
+  /*margin: 0px auto 160px; */
+  margin-top: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
   padding-left: 10px;
   padding-right: 10px;
   /*height: 200px;
@@ -1126,6 +1148,25 @@ input {
   border-color: transparent #3e78b2 transparent #396ea3;
   border-width: 0px 50px 30px;
   border-style: solid;
+}
+
+@media (max-width: 850px) {
+  .container-testimonials {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .text-testimonials {
+    margin-left: 0px;
+  }
+  .award-ribbon {
+    margin-top: 0px;
+    margin-bottom: 100px;
+  }
 }
 
 .container-form {

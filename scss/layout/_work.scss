@@ -64,7 +64,7 @@
 
 /** MODAL WORK **/
 
-.portfolio-modal {
+.work-modal {
   position: fixed;
   z-index: 110;
   width: 600px;
@@ -85,31 +85,35 @@
 
 }
 
-.portfolio-header {
+.work-header {
   background: $lighterblue;
   padding-left: 15px;
   padding-right: 15px;
 }
 
-.portfolio-header h2 {
+.work-header h2 {
   padding-top: 10px;
 }
 
-.portfolio-header h4 {
+.work-header h4 {
   color: $brightgold;
   padding-bottom: 20px;
   padding-left: 5px;
   padding-right: 5px;
 }
 
-.portfolio-content p {
-  padding: 15px 15px 40px 15px;
+.work-content {
+  margin-bottom: 40px;
+}
+
+.work-content p {
+  padding: 30px 15px 30px 15px;
   text-align: justify;
 }
 
-.portfolio-content img {
+.work-content img {
   display: block;
-  margin: 60px 0 60px 0;
+  margin: 50px 0 40px 0;
   width: 600px;
   max-width: 100%;
   border: none;
@@ -129,6 +133,10 @@
   border-radius: 50%;
   cursor: pointer;
   box-shadow: 0 0 5px rgba(black, .5);
+}
+
+.modal-close:focus {
+  outline: none;
 }
 
 @keyframes modalIn {

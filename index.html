@@ -65,7 +65,7 @@
       </figcaption>
 
       <!-- Portfolio modal 1 -->
-      <div class="portfolio-modal">
+      <div class="work-modal">
         <button class="modal-close">
           <svg x="0px" y="0px"
             viewBox="0 0 30 17" height="17" width="30">
@@ -75,16 +75,15 @@
             </g>
           </svg>
         </button>
-        <div class="portfolio-header header-one">
-          <div class="portfolio-title-box">
-            <h2 class="portfolio-title">Wordpress theme</h2>    
-            <h4 class="portfolio-subtitle">Designed and developed a Wordpress theme</h4>
-          </div>
-        </div> <!-- / portfolio-header -->
-        <div class="portfolio-content">
-          <p>For this project I felt it was important to really have a clear and uncluttered design, to let the beauty of the work my client does really shine through. I wanted an organic and alive feeling.<br><br>Built from scratch with Wordpress, I developed a tailor made theme for my client.</p>
-          <a href="https://donhanson.com" target="_blank" class="btn-gold">Visit website</a>
+        <div class="work-header">
+            <h2>Wordpress theme</h2>    
+            <h4 >Designed and developed a Wordpress theme</h4>
+        </div>
+        <div class="work-content">
+          <p>For this project I felt it was important to really have a clear and uncluttered design, to let the beauty of the work my client does really shine through. I wanted an organic and alive feeling.<br><br>Built from scratch with Wordpress, I developed a custom-made theme for my client to really match the content.</p>
+          <a href="https://donhanson.com" target="_blank" class="btn-transparent btn-transparent-2">Visit website</a>
           <img src="img/modal-image-1.jpg" alt="Image of my first portfolio item" class="modal-image responsive">
+          <button class="btn-gold">Close</button>
         </div>
       </div><!-- /modal -->
     </figure>
@@ -98,7 +97,7 @@
       </figcaption>
 
       <!-- Portfolio modal 2 -->
-      <div class="portfolio-modal">
+      <div class="work-modal">
         <button class="modal-close">
           <svg x="0px" y="0px"
             viewBox="0 0 30 17" height="17" width="30">
@@ -108,17 +107,15 @@
             </g>
           </svg>
         </button>
-        <div class="portfolio-header header-one">
-          <div class="portfolio-title-box">
-            <h2 class="portfolio-title">E-commerce web application</h2>    
-            <h4 class="portfolio-subtitle">Designed and developed a production ready e-commerce web application</h4>
-          </div>
-        </div> <!-- / portfolio-header -->
-        <div class="portfolio-content">
-          <p>This was my main project in the six months intensive CareerFoundry course.<br><br>The web application is built from scratch using Ruby on Rails, HTML, CSS and JavaScript. I also learned the value of version control using Git and GitHub and implemented unit and functional tests using RSpec and FactoryBot. The web application has authentication and authorization and Stripe payment processing features. For the frontend I used Bootstrap.
-          </p>
-          <a href="https://creativebikes.herokuapp.com/" target="_blank" class="btn-gold">Visit website</a>
+        <div class="work-header">
+            <h2>E-commerce web application</h2>
+            <h4>Designed and developed a production ready e-commerce web application</h4>
+        </div>
+        <div class="work-content">
+          <p>My main project in the six months CareerFoundry course.<br><br>The web application is built from scratch using Ruby on Rails, HTML, CSS and JavaScript. I also learned the value of version control using Git and GitHub and implemented unit and functional tests using RSpec and FactoryBot. Other features are: User Authentication, Admin Role (Authorisation), Action Cable Realtime Comments, Redis product views ticker, Product Rating (highest / lowest / average) and Stripe payments.<br><br>The web application is responsive and for the frontend I used Bootstrap.</p>
+          <a href="https://creativebikes.herokuapp.com/" target="_blank" class="btn-transparent btn-transparent-2">Visit website</a>
           <img src="img/modal-image-2.jpg" alt="Image of my first portfolio item" class="modal-image responsive">
+          <button class="btn-gold">Close</button>
         </div>
       </div><!-- /modal -->
     </figure>
@@ -132,7 +129,7 @@
         </figcaption>
 
         <!-- Portfolio modal 3 -->
-        <div class="portfolio-modal">
+        <div class="work-modal">
           <button class="modal-close">
             <svg x="0px" y="0px"
               viewBox="0 0 30 17" height="17" width="30">
@@ -142,16 +139,15 @@
               </g>
             </svg>
           </button>
-          <div class="portfolio-header header-one">
-            <div class="portfolio-title-box">
-              <h2 class="portfolio-title">Blog web application</h2>    
-              <h4 class="portfolio-subtitle">Designed and developed a blog web application</h4>
-            </div>
-          </div> <!-- / portfolio-header -->
-          <div class="portfolio-content">
-            <p>The web application is built from scratch using Ruby on Rails, HTML, CSS and JavaScript.</p>
-            <a href="http://www.movelikeaswift.com/" target="_blank" class="btn-gold">Visit website</a>
+          <div class="work-header">
+              <h2>Blog web application</h2>    
+              <h4>Designed and developed a blog web application</h4>
+          </div>
+          <div class="work-content">
+            <p>The web application is built from scratch using Ruby on Rails, HTML, CSS and JavaScript.<br><br>The web application is responsive and for the frontend I used Bootstrap.</p>
+            <a href="http://www.movelikeaswift.com/" target="_blank" class="btn-transparent btn-transparent-2">Visit website</a>
             <img src="img/modal-image-3.jpg" alt="Image of my first portfolio item" class="modal-image responsive">
+            <button class="btn-gold">Close</button>
           </div>
         </div><!-- /modal -->
       </figure>
@@ -176,7 +172,9 @@
 
   <!-- CONTACT -->
 
-  <form class="container-form anchor" id="contact-section">
+  <div class="anchor-contact-section anchor" id="contact-section"></div>
+
+  <form class="container-form" >
 
     <h2>Please get in touch</h2>
 
@@ -214,6 +212,7 @@
   <div class="button-bottom">
     <a href="#header-section" class="btn-gold btn-gold-2">Back to top</a>
   </div>
+  
 
   <!-- FOOTER -->
 
@@ -226,7 +225,7 @@
     <button id="open-privacy-policy" class="btn-link">Privacy Policy</button>
 
     <!-- The Modal -->
-    <div id="modal-footer" class="portfolio-modal modal">
+    <div id="modal-footer" class="work-modal modal">
 
       <!-- Modal content -->
       <div class="modal-content">

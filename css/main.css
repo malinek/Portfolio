@@ -464,6 +464,11 @@ input {
   color: #030F1F;
 }
 
+.btn-transparent-2 {
+  color: #7f7f7f;
+  border: solid 1px #7f7f7f;
+}
+
 /***** BUTTON INSIDE THE MODALS WORK SECTION *****/
 .btn-gold {
   padding: 8px 16px;
@@ -856,7 +861,7 @@ input {
 }
 
 /** MODAL WORK **/
-.portfolio-modal {
+.work-modal {
   position: fixed;
   z-index: 110;
   width: 600px;
@@ -875,35 +880,39 @@ input {
   display: none;
 }
 
-.portfolio-modal.is-open {
+.work-modal.is-open {
   display: block;
 }
 
-.portfolio-header {
+.work-header {
   background: #4677AB;
   padding-left: 15px;
   padding-right: 15px;
 }
 
-.portfolio-header h2 {
+.work-header h2 {
   padding-top: 10px;
 }
 
-.portfolio-header h4 {
+.work-header h4 {
   color: #EBC164;
   padding-bottom: 20px;
   padding-left: 5px;
   padding-right: 5px;
 }
 
-.portfolio-content p {
-  padding: 15px 15px 40px 15px;
+.work-content {
+  margin-bottom: 40px;
+}
+
+.work-content p {
+  padding: 30px 15px 30px 15px;
   text-align: justify;
 }
 
-.portfolio-content img {
+.work-content img {
   display: block;
-  margin: 60px 0 60px 0;
+  margin: 50px 0 40px 0;
   width: 600px;
   max-width: 100%;
   border: none;
@@ -924,6 +933,10 @@ input {
   cursor: pointer;
   -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.modal-close:focus {
+  outline: none;
 }
 
 @-webkit-keyframes modalIn {
@@ -1038,7 +1051,7 @@ input {
 }
 
 .container-testimonials {
-  margin: 0 auto 60px auto;
+  margin: 0 auto 20px auto;
   padding-left: 30px;
   padding-right: 30px;
   max-width: 1000px;

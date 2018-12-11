@@ -437,7 +437,7 @@ input {
 }
 
 /***** BUTTON THAT OPENS THE MODALS WORK SECTION *****/
-.button-work {
+.btn-transparent {
   padding: 8px 16px;
   color: #E3DEC5;
   border: solid 1px #E3DEC5;
@@ -459,19 +459,19 @@ input {
   cursor: pointer;
 }
 
-.button-work:hover, .button-work:focus {
+.btn-transparent:hover, .btn-transparent:focus {
   background-color: #E3DEC5;
   color: #030F1F;
 }
 
 /***** BUTTON INSIDE THE MODALS WORK SECTION *****/
-.button-modal {
-  padding: 12px 26px;
+.btn-gold {
+  padding: 8px 16px;
   color: #4677AB;
   background-color: #EBC164;
-  border: solid 1px #4677AB;
+  border: solid 1px #e5af37;
   border-radius: 4px;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 700;
   letter-spacing: 2px;
   -webkit-transition: all 250ms ease;
@@ -479,17 +479,24 @@ input {
   transition: all 250ms ease;
   cursor: pointer;
   text-transform: uppercase;
+}
+
+.btn-gold:hover, .btn-gold:focus {
+  background-color: #4677AB;
+  color: #EBC164;
+  border: none;
+}
+
+/***** BUTTON BOTTOM OF THE PAGE *****/
+.btn-gold-2 {
+  padding: 12px 30px;
+  font-size: 16px;
   -webkit-box-shadow: 0 12px 20px -8px rgba(0, 0, 0, 0.5);
   box-shadow: 0 12px 20px -8px rgba(0, 0, 0, 0.5);
 }
 
-.button-modal:hover, .button-modal:focus {
-  background-color: #4677AB;
-  color: #EBC164;
-}
-
 /***** BUTTON CONTACT FORM *****/
-.button-form {
+.btn-blue {
   padding: 12px 40px;
   color: #EBC164;
   background-color: #6a92bb;
@@ -500,7 +507,7 @@ input {
   letter-spacing: 2px;
 }
 
-.button-form:hover, .button-form:focus {
+.btn-blue:hover, .btn-blue:focus {
   background-color: #4c78a6;
   color: #EBC164;
   -webkit-transform: translateY(4px);
@@ -509,7 +516,7 @@ input {
 }
 
 /***** BUTTON PRIVACY POLICY (LOOKS LIKE A LINK) *****/
-.button-privacy-policy {
+.btn-link {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -861,7 +868,7 @@ input {
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  background: white;
+  background: #f5f0db;
   -webkit-box-shadow: 0 0 0 25em rgba(0, 0, 0, 0.5);
   box-shadow: 0 0 0 25em rgba(0, 0, 0, 0.5);
   overflow-y: scroll;
@@ -890,16 +897,17 @@ input {
 }
 
 .portfolio-content p {
-  padding: 15px 15px 30px 15px;
+  padding: 15px 15px 40px 15px;
   text-align: justify;
 }
 
 .portfolio-content img {
   display: block;
-  margin: 40px 0 0 0;
+  margin: 60px 0 60px 0;
   width: 600px;
   max-width: 100%;
   border: none;
+  border: 15px solid white;
 }
 
 .modal-close {
@@ -1314,6 +1322,10 @@ input {
   height: 100%;
 }
 
+.modal-content {
+  margin-bottom: 30px;
+}
+
 .modal-footer-header {
   background: #4677AB;
   padding-left: 15px;
@@ -1334,4 +1346,11 @@ input {
 
 .close-modal-bottom {
   margin-bottom: 40px;
+}
+
+@media (max-width: 400px) {
+  .modal-text p {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }

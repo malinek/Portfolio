@@ -1,6 +1,6 @@
 /***** BUTTON THAT OPENS THE MODALS WORK SECTION *****/
 
-.button-work {
+.btn-transparent {
   padding: 8px 16px;
   color: $light;
   border: solid 1px $light;
@@ -20,36 +20,44 @@
   cursor: pointer;
 }
 
-.button-work:hover, .button-work:focus {
+.btn-transparent:hover, .btn-transparent:focus {
   background-color: $light;
   color: #030F1F;
 }
 
 /***** BUTTON INSIDE THE MODALS WORK SECTION *****/
 
-.button-modal {
-  padding: 12px 26px;
+.btn-gold {
+  padding: 8px 16px;
   color: $lighterblue;
   background-color: $brightgold;
-  border: solid 1px $lighterblue;
+  border: solid 1px darken($brightgold, $amount: 10%);
   border-radius: 4px;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 700;
   letter-spacing: 2px;
   transition: all 250ms ease;
   cursor: pointer;
   text-transform: uppercase;
-  box-shadow: 0 12px 20px -8px rgba(0, 0, 0, 0.5);
 }
 
-.button-modal:hover, .button-modal:focus {
+.btn-gold:hover, .btn-gold:focus {
   background-color: $lighterblue;
   color: $brightgold;
+  border: none;
+}
+
+/***** BUTTON BOTTOM OF THE PAGE *****/
+
+.btn-gold-2 {
+  padding: 12px 30px;
+  font-size: 16px;
+  box-shadow: 0 12px 20px -8px rgba(0, 0, 0, 0.5);
 }
 
 /***** BUTTON CONTACT FORM *****/
 
-.button-form {
+.btn-blue {
   padding: 12px 40px;
   color: $brightgold;
   background-color: #6a92bb;
@@ -60,7 +68,7 @@
   letter-spacing: 2px;
 }
 
-.button-form:hover, .button-form:focus {
+.btn-blue:hover, .btn-blue:focus {
   background-color: darken($color: #6a92bb, $amount: 10%);
   color: $brightgold;
   transform: translateY(4px);
@@ -68,7 +76,7 @@
 
 /***** BUTTON PRIVACY POLICY (LOOKS LIKE A LINK) *****/
 
-.button-privacy-policy {
+.btn-link {
   display: block;
   margin-left: auto;
   margin-right: auto;

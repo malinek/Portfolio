@@ -8,7 +8,7 @@ portfolioContainer.addEventListener('click', e => {
   //console.log(e)
   //e.preventDefault()
 
-  const modalToggle = e.target.closest('.portfolio-link')
+  const modalToggle = e.target.closest('.btn-transparent')
     // console.log(modalToggle)
     if (! modalToggle) return
 
@@ -52,7 +52,7 @@ document.querySelector('.work-item2')
 portfolioContainer2.addEventListener('click', e => {
   //console.log(e)
 
-  const modalToggle = e.target.closest('.portfolio-link')
+  const modalToggle = e.target.closest('.btn-transparent')
   // console.log(modalToggle)
   if (! modalToggle) return
 
@@ -96,7 +96,7 @@ document.querySelector('.work-item3')
 portfolioContainer3.addEventListener('click', e => {
   //console.log(e)
 
-  const modalToggle = e.target.closest('.portfolio-link')
+  const modalToggle = e.target.closest('.btn-transparent')
   // console.log(modalToggle)
   if (! modalToggle) return
 
@@ -138,12 +138,12 @@ modalOpen()
 var modal = document.getElementById('modal-footer');
 
 // Get the button that opens the modal
-var btn = document.getElementById("button-privacy-policy");
+var btn = document.getElementById("open-privacy-policy");
 
 // Get the <span> element that closes the modal
 var closeTop = document.getElementsByClassName("close")[0];
 
-var closeBottom = document.getElementsByClassName("close-modal-bottom")[0];
+var closeBottom = document.getElementById("close-privacy-policy-bottom");
 
 // When the user clicks on the button, open the modal 
 btn.onclick = function() {

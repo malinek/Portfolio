@@ -11,7 +11,7 @@
 
 <body>
 
-  <header class="main-header">
+  <header class="main-header" id="header-section">
     <div class="container-navbar">
 
       <div>
@@ -40,7 +40,7 @@
   <section class="container-about-me anchor" id="about-section">
     <div class="text-about-me">
       <h2>Hi, I'm Malin...</h2>
-      <p>I create websites. I'm an intuitive, creative and structured person and the most important thing for me is to listen to you so I understand what you are looking for. And from there I use my ability to create something beautiful for you.<br><br>A website that really lets you and your business shine is so important for reaching your potential. I'm passionate about helping you with that.<br><br>I can create a custom-made website for you completely from scratch or help you by using an existing template. If you are not sure what you want I can help you find out.<br><br>I can help you with the entire process, taking photos for your website, the design and of course, the development. I'm very flexible to your needs.</p>
+      <p>I create websites. I'm an intuitive, creative and structured person and the most important thing for me is to listen to you so I understand what you are looking for. And from there I use my ability to create something beautiful for you.<br><br>A website that really lets your business shine is so important for you to be able to reach your potential. I'm passionate about helping you with that.<br><br>I can create a custom-made website for you completely from scratch or help you by using an existing template. If you are not sure what you want I can help you find out.<br><br>If you want, I'm happy to help you with the entire process, taking photos for your website, the design and of course, the development. I'm very flexible to your needs.</p>
     </div>
     <div class="image-about-me">
       <img src="img/me.jpg" alt="Image of Malin Ekelund" class="image-malin">
@@ -61,7 +61,7 @@
       <img src="img/work-image-1.jpg" alt="Image of my first portfolio item" class="responsive">
       <figcaption class="work-desc">
         <h4>Wordpress theme</h4>
-        <button class="portfolio-link button-work">Project details</button>
+        <button class="btn-transparent">Project details</button>
       </figcaption>
 
       <!-- Portfolio modal 1 -->
@@ -83,7 +83,7 @@
         </div> <!-- / portfolio-header -->
         <div class="portfolio-content">
           <p>For this project I felt it was important to really have a clear and uncluttered design, to let the beauty of the work my client does really shine through. I wanted an organic and alive feeling.<br><br>Built from scratch with Wordpress, I developed a tailor made theme for my client.</p>
-          <a href="https://donhanson.com" target="_blank" class="button-modal">Visit website</a>
+          <a href="https://donhanson.com" target="_blank" class="btn-gold">Visit website</a>
           <img src="img/modal-image-1.jpg" alt="Image of my first portfolio item" class="modal-image responsive">
         </div>
       </div><!-- /modal -->
@@ -94,7 +94,7 @@
       <img src="img/work-image-2.jpg" alt="Image of my second portfolio item" class="responsive">
       <figcaption class="work-desc">
         <h4>E-commerce web application</h4>
-        <button class="portfolio-link button-work">Project details</button>
+        <button class="btn-transparent">Project details</button>
       </figcaption>
 
       <!-- Portfolio modal 2 -->
@@ -117,7 +117,7 @@
         <div class="portfolio-content">
           <p>This was my main project in the six months intensive CareerFoundry course.<br><br>The web application is built from scratch using Ruby on Rails, HTML, CSS and JavaScript. I also learned the value of version control using Git and GitHub and implemented unit and functional tests using RSpec and FactoryBot. The web application has authentication and authorization and Stripe payment processing features. For the frontend I used Bootstrap.
           </p>
-          <a href="https://creativebikes.herokuapp.com/" target="_blank" class="button-modal">Visit website</a>
+          <a href="https://creativebikes.herokuapp.com/" target="_blank" class="btn-gold">Visit website</a>
           <img src="img/modal-image-2.jpg" alt="Image of my first portfolio item" class="modal-image responsive">
         </div>
       </div><!-- /modal -->
@@ -128,7 +128,7 @@
         <img src="img/work-image-3.jpg" alt="Image of my second portfolio item" class="responsive">
         <figcaption class="work-desc">
           <h4>Blog web application</h4>
-          <a href="#" class="portfolio-link button-work">Project details</a>
+          <button class="btn-transparent">Project details</button>
         </figcaption>
 
         <!-- Portfolio modal 3 -->
@@ -150,7 +150,7 @@
           </div> <!-- / portfolio-header -->
           <div class="portfolio-content">
             <p>The web application is built from scratch using Ruby on Rails, HTML, CSS and JavaScript.</p>
-            <a href="http://www.movelikeaswift.com/" target="_blank" class="button-modal">Visit website</a>
+            <a href="http://www.movelikeaswift.com/" target="_blank" class="btn-gold">Visit website</a>
             <img src="img/modal-image-3.jpg" alt="Image of my first portfolio item" class="modal-image responsive">
           </div>
         </div><!-- /modal -->
@@ -207,12 +207,12 @@
       </div>
     </div>
 
-    <button type="submit" class="button-work button-form">Submit</button>
+    <button type="submit" class="btn-transparent btn-blue">Submit</button>
 
   </form>
 
   <div class="button-bottom">
-    <a href="#" class="button-modal">Back to top</a>
+    <a href="#header-section" class="btn-gold btn-gold-2">Back to top</a>
   </div>
 
   <!-- FOOTER -->
@@ -223,7 +223,7 @@
     <a href="https://www.linkedin.com/in/malin-ekelund-web-developer/" target="_blank"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
 
     <!-- Trigger/Open The Modal -->
-    <button id="button-privacy-policy" class="button-privacy-policy">Privacy Policy</button>
+    <button id="open-privacy-policy" class="btn-link">Privacy Policy</button>
 
     <!-- The Modal -->
     <div id="modal-footer" class="portfolio-modal modal">
@@ -244,9 +244,9 @@
           <h2 class=" privacy-policy-title">Privacy Policy</h2>    
         </div>
         <div class="modal-text">
-          <p>This privacy policy discloses the privacy practices for www.malinekelund.com. This privacy policy applies solely to information collected by this website. It will notify you of the following:<br><br>1. What personally identifiable information is collected from you through the website, how it is used and with whom it may be shared.<br>2. What choices are available to you regarding the use of your data.<br>3. The security procedures in place to protect the misuse of your information.<br>4. How you can correct any inaccuracies in the information.<br><br><strong>Information Collection, Use, and Sharing</strong><br><br>I am the sole owner of the information collected on this site. We only have access to/collect information that you voluntarily give us via email or other direct contact from you. We will not sell or rent this information to anyone.<br><br>I will use your information to respond to you, regarding the reason you contacted me. I will not share your information with any third party.<br><br>Unless you ask me not to, I may contact you via email in the future to tell you about specials, new offers, or changes to this privacy policy.<br><br><strong>Your Access to and Control Over Information</strong><br><br>You may opt out of any future contacts from me at any time. You can do the following at any time by contacting me via the contact form given on my website or by sending me an email: malin.ekelund@gmail.com:<br><br>1. See what data I have about you, if any.<br>2. Change/correct any data I have about you.<br>3. Have us delete any data I have about you.<br>4. Express any concern you have about my use of your data.<br><br><strong>Security</strong><br><br>I take precautions to protect your information. You can reach my website at https://www.malinekelund.com. It uses an SSL / TLS certificate. This is the standard technology for keeping an internet connection secure and safeguarding any sensitive data that is being sent between two systems, preventing criminals from reading and modifying any information transferred, including potential personal details. Please check your browser to ensure you are on https://www.malinekelund.com.<br><br>If you have any questions or concerns, don't hesitate to email me at malin.ekelund@gmail.com</p>
+          <p>This privacy policy discloses the privacy practices for www.malinekelund.com. This privacy policy applies solely to information collected by this website. It will notify you of the following:<br><br>1. What personally identifiable information is collected from you through the website, how it is used and with whom it may be shared.<br>2. What choices are available to you regarding the use of your data.<br>3. The security procedures in place to protect the misuse of your information.<br>4. How you can correct any inaccuracies in the information.<br><br><strong>Information Collection, Use, and Sharing</strong><br><br>I am the sole owner of the information collected on this site. I only have access to/collect information that you voluntarily give me via email or other direct contact from you. I will not sell or rent this information to anyone.<br><br>I will use your information to respond to you, regarding the reason you contacted me. I will not share your information with any third party.<br><br>Unless you ask me not to, I may contact you via email in the future to tell you about specials, new offers, or changes to this privacy policy.<br><br><strong>Your Access to and Control Over Information</strong><br><br>You may opt out of any future contacts from me at any time. You can do the following at any time by contacting me via the contact form given on my website or by sending me an email: malin.ekelund@gmail.com:<br><br>1. See what data I have about you, if any.<br>2. Change/correct any data I have about you.<br>3. Have me delete any data I have about you.<br>4. Express any concern you have about my use of your data.<br><br><strong>Security</strong><br><br>I take precautions to protect your information. You can reach my website at https://www.malinekelund.com. It uses an SSL / TLS certificate. This is the standard technology for keeping an internet connection secure and safeguarding any sensitive data that is being sent between two systems, preventing criminals from reading and modifying any information transferred, including potential personal details. Please check your browser to ensure you are on https://www.malinekelund.com.<br><br>If you have any questions or concerns, don't hesitate to email me at malin.ekelund@gmail.com</p>
         </div>
-        <button class="button-modal close-modal-bottom">Close</button>
+        <button class="btn-gold" id="close-privacy-policy-bottom">Close</button>
       </div><!-- end modal content -->
     </div><!-- end modal -->
     <h3>&copy; Malin Ekelund 2018</h3>

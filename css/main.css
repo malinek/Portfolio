@@ -342,10 +342,6 @@ template {
   box-sizing: border-box;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   /*background: $light; */
   background: #f5f0db;

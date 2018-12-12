@@ -1330,7 +1330,7 @@ input {
 }
 
 /* MODAL PRIVACY POLICY */
-.modal {
+.modal-footer {
   width: 800px;
   height: 100%;
 }

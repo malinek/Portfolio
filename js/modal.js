@@ -5,20 +5,20 @@
 const portfolioContainer = document.querySelector('.work-item')
 
 portfolioContainer.addEventListener('click', e => {
-  //console.log(e)
-  //e.preventDefault()
-
+  
   const modalToggle = e.target.closest('.btn-transparent')
     // console.log(modalToggle)
     if (! modalToggle) return
 
   const modal = modalToggle.parentNode.nextElementSibling
+  
   const closeButton = modal.querySelector('.modal-close')
+
+  const closeButton2 = modal.querySelector('.modal-close-2')
 
   const modalOpen = _ => {
     modal.classList.add('is-open')
-    modal.style.animation = 'modalIn 500ms forwards'
-    //document.body.style.overflowY = 'hidden'
+    modal.style.animation = 'modalIn 700ms forwards'
   }
 
   const modalClose = _ => {
@@ -29,7 +29,11 @@ portfolioContainer.addEventListener('click', e => {
   closeButton.addEventListener('click', _ => {
     modal.style.animation = 'modalOut 500ms forwards'
     modal.addEventListener('animationend', modalClose)
-    //document.body.style.overflowY = 'scroll'
+  })
+
+  closeButton2.addEventListener('click', _ => {
+    modal.style.animation = 'modalOut 500ms forwards'
+    modal.addEventListener('animationend', modalClose)
   })
 
   document.addEventListener('keydown', e => {
@@ -50,19 +54,19 @@ const portfolioContainer2 =
 document.querySelector('.work-item2')
 
 portfolioContainer2.addEventListener('click', e => {
-  //console.log(e)
 
   const modalToggle = e.target.closest('.btn-transparent')
-  // console.log(modalToggle)
   if (! modalToggle) return
 
 const modal = modalToggle.parentNode.nextElementSibling
+
 const closeButton = modal.querySelector('.modal-close')
+
+const closeButton2 = modal.querySelector('.modal-close-2')
 
 const modalOpen = _ => {
   modal.classList.add('is-open')
-  modal.style.animation = 'modalIn 500ms forwards'
-  //document.body.style.overflowY = 'hidden'
+  modal.style.animation = 'modalIn 700ms forwards'
 }
 
 const modalClose = _ => {
@@ -73,7 +77,11 @@ const modalClose = _ => {
 closeButton.addEventListener('click', _ => {
   modal.style.animation = 'modalOut 500ms forwards'
   modal.addEventListener('animationend', modalClose)
-  //document.body.style.overflowY = 'scroll'
+})
+
+closeButton2.addEventListener('click', _ => {
+  modal.style.animation = 'modalOut 500ms forwards'
+  modal.addEventListener('animationend', modalClose)
 })
 
 document.addEventListener('keydown', e => {
@@ -94,19 +102,19 @@ const portfolioContainer3 =
 document.querySelector('.work-item3')
 
 portfolioContainer3.addEventListener('click', e => {
-  //console.log(e)
 
   const modalToggle = e.target.closest('.btn-transparent')
-  // console.log(modalToggle)
   if (! modalToggle) return
 
 const modal = modalToggle.parentNode.nextElementSibling
+
 const closeButton = modal.querySelector('.modal-close')
+
+const closeButton2 = modal.querySelector('.modal-close-2')
 
 const modalOpen = _ => {
   modal.classList.add('is-open')
-  modal.style.animation = 'modalIn 500ms forwards'
-  //document.body.style.overflowY = 'hidden'
+  modal.style.animation = 'modalIn 700ms forwards'
 }
 
 const modalClose = _ => {
@@ -117,7 +125,11 @@ const modalClose = _ => {
 closeButton.addEventListener('click', _ => {
   modal.style.animation = 'modalOut 500ms forwards'
   modal.addEventListener('animationend', modalClose)
-  //document.body.style.overflowY = 'scroll'
+})
+
+closeButton2.addEventListener('click', _ => {
+  modal.style.animation = 'modalOut 500ms forwards'
+  modal.addEventListener('animationend', modalClose)
 })
 
 document.addEventListener('keydown', e => {
@@ -139,9 +151,10 @@ var modal = document.getElementById('modal-footer');
 
 // Get the button that opens the modal
 var btn = document.getElementById("open-privacy-policy");
+modal.style.animation = 'modalIn 700ms forwards'
 
-// Get the <span> element that closes the modal
-var closeTop = document.getElementsByClassName("close")[0];
+// Get the elements that closes the modal
+var closeTop = document.getElementById("close-privacy-policy-top");
 
 var closeBottom = document.getElementById("close-privacy-policy-bottom");
 
@@ -150,7 +163,7 @@ btn.onclick = function() {
   modal.style.display = "block";
 }
 
-// When the user clicks on <span> (x), close the modal
+// When the user clicks on (x), close the modal
 closeTop.onclick = function() {
   modal.style.display = "none";
 }
@@ -158,3 +171,5 @@ closeTop.onclick = function() {
 closeBottom.onclick = function() {
   modal.style.display = "none";
 }
+
+

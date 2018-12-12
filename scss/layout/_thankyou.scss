@@ -1,0 +1,27 @@
+.box-thankyou {
+  text-align: center;
+  background: $lighterblue;
+  padding: 20px 20px 30px 20px;
+  border-radius: 4px;
+  box-shadow: 0 20px 15px -12px rgba(0, 0, 0, 0.5);
+  position: absolute;
+  width: 450px;
+  max-width: 90%;
+  top: 100%;
+  left: 0;
+  right: 0;
+  margin: auto
+}
+
+.box-thankyou h3 {
+  text-transform: none;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.box-thankyou a {
+  color: $darkblue;
+  font-size: 20px;
+  text-decoration: underline;
+}

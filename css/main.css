@@ -1363,3 +1363,32 @@ input {
     padding-right: 10px;
   }
 }
+
+.box-thankyou {
+  text-align: center;
+  background: #4677AB;
+  padding: 20px 20px 30px 20px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 20px 15px -12px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 20px 15px -12px rgba(0, 0, 0, 0.5);
+  position: absolute;
+  width: 450px;
+  max-width: 90%;
+  top: 100%;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.box-thankyou h3 {
+  text-transform: none;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.box-thankyou a {
+  color: #08264e;
+  font-size: 20px;
+  text-decoration: underline;
+}
